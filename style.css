@@ -1,0 +1,147 @@
+@import url(reset.css);
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+.section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.25;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+}
+
+.bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+}
+
+.bg3 {
+    animation-duration:5s;
+}
+
+@keyframes slide {
+    0% {
+        transform:translateX(-25%);
+    }
+    100% {
+        transform:translateX(25%);
+    }
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+}
+
+h1{
+    font-size: 50px;
+    padding: 2px;
+    text-align: center;
+    color: #333;
+    width:300px;
+    background: #fff;
+    border-radius: 40%;
+}
+
+.box{
+    border: 5px solid #fff;
+    background: #fff;
+    border-radius: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2em;
+    padding: 1em;
+    width: 25em;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    color: aliceblue;
+    font-size: 30px;
+    size: 40px;
+    transition: .5s;
+}
+.btn:hover, .on {
+    transform: scale(1.05);
+}
+
+.btn:active {
+    transition: 1.25s;
+}
+
+#A{
+    border: 5px solid #333;
+    border-radius: 10%;
+    background-color: #c23616;
+}
+#A:hover{
+    background-color: #f2552d;
+}
+#A:active{
+    background-color: #ff8c8c;
+}
+#B{
+    border: 5px solid #333;
+    border-radius: 10%;
+    background-color: #0097e6;
+}
+#B:hover{
+    background-color: #00a8ff;
+}
+#B:active
+{
+    background-color: #74b9ff;
+}
+#C{
+    border: 5px solid #333;
+    border-radius: 10%;
+    background-color: #44bd32;
+}
+#C:hover{
+    background-color: #4cd137;
+}
+#C:active{
+    background-color: #55efc4;
+}
+#D{
+    border: 5px solid #333;
+    border-radius: 10%;
+    background-color: #8c7ae6;
+}
+#D:hover{
+    background-color: #9c88ff;
+}
+#D:active{
+    background-color: #a29bfe;
+}
+button {
+    background-color: #747d8c;
+    color: #fff;
+    font-size: 20px;
+    padding: 0.5em;
+    transition: 0.5s;
+    border-radius: 10%;
+}
+button:hover {
+    background-color: #a4b0be;
+}
